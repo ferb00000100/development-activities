@@ -1,0 +1,48 @@
+
+button {
+    background-color: yellow;
+    font-size: 24px;
+}
+
+button:active {
+    background-color: blue;
+    color: aqua;;
+}
+
+nav {
+    width: 250px;
+    /*border-style: solid;*/
+    /*border-color: black;*/
+
+}
+a:last-of-type {
+    border: none;
+}
+a {
+    font-size: 14px;
+    width: 10px;
+    font-family:"Arial", "Helvetica Neue", Helvetica, sans-serif;
+    text-decoration: none;
+    border-right-color: black;
+    border-right-style: solid;
+    padding-left: 5px;
+}
+a:hover {
+    background-color: blue;
+    color: #ffffff;
+}
+
+a:active {
+    background-color: darkred;
+    color: white;
+}
+
+button {
+    background-color: yellow;
+    font-size: 24px;
+}
+
+button:active {
+    background-color: blue;
+    color: aqua;;
+}
