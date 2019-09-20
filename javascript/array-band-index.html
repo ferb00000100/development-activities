@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Bands</title>
+</head>
+<body>
+
+
+
+<script type="text/javascript">
+
+	var favbands = ["young the giant", "big head todd and the monsters", "u2", "new politics", "blues traveler"];
+	var yourFavBands = prompt("What are your favorite bands?");
+	yourFavBands.toLowerCase();
+
+	console.log(yourFavBands);
+    console.log(favbands.indexOf(yourFavBands))
+	// If band name is not in the array it returns a "-1" so search for index that is equal or greater than 0
+	if (favbands.indexOf(yourFavBands) >= 0 ) {
+		alert("Yeah I love them too");
+	}
+	else {
+	    alert("Nah they are pretty lame!");
+	}
+
+
+
+
+
+
+
+</script>
+
+
+
+
+</body>
+</html>

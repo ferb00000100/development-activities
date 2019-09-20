@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>RPS</title>
+</head>
+<body>
+
+<!--
+ ROCK
+ PAPER
+ SCISSORS
+
+var user score
+var computer score
+var tie score
+var total score
+var wins
+var losses
+var ties
+
+Index rps = ["r", "p", "s"]
+loop for how many times you want to play
+Math.floor(Math.random() * 10) / 3 - 1) to get a random number 0-3
+
+(comp r & user s) || (comp s & user p) || (comp p & user s) = comp wins
+(comp r & user r) || (comp p & user p) || (comp s & user s) = tie
+(comp s & user r) || (comp p & user s) || (comp s & user p) = user wins
+
+-->
+<script type="text/javascript">
+	var computerChoices = ["r", "p","s"];
+
+	var wins = 0
+    var losses = 0
+    var ties = 0
+
+	for(var i = 0; i < 5; i++) {
+		// var computerGuess = Math.floor(Math.random() * 10) / 3 - 1
+        var computerGuess = computerChoices[Math.floor(Math.random() * computerChoices.length)];
+	    var userGuess = prompt("Enter r, p, s to    play");
+	    userGuess = userGuess.toLowerCase();
+
+		if (userGuess === "r" || userGuess === "p" || userGuess === "s") {
+
+	        if ((computerGuess === "r" && userGuess === "s") || (computerGuess === "s" && userGuess ==="p") || (computerGuess === "p" && userGuess ==="s")) {
+                losses++;
+                alert("Loss" + " Computer Guessed " + computerGuess);
+                console.log("Comp Guess " + computerGuess + " UserGuess " + userGuess )
+                alert("Score: Wins " + wins + " losses " + losses + " ties " + ties);
+            }
+
+            else if ((computerGuess === "r" && userGuess === "s") || (computerGuess === "s" && userGuess ==="p") || (computerGuess === "p" && userGuess ==="s")) {
+                wins++;
+                alert("Win" + " Computer Guessed " + computerGuess);
+                console.log("Comp Guess " + computerGuess + " UserGuess " + userGuess )
+                alert("Score: Wins " + wins + " losses " + losses + " ties " + ties);
+            }
+
+            else {
+                ties++
+		        alert("Tie!");
+                console.log("Comp Guess " + computerGuess + " UserGuess " + userGuess )
+                alert("Score: Wins " + wins + " losses " + losses + " ties " + ties);
+	        }
+        }
+        // console.log("computer " +computerGuess)
+		//
+        // console.log("user " + userGuess)
+	}
+
+</script>
+
+
+
+</body>
+</html>
