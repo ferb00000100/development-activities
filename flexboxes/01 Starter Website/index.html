@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Simple Page Layout</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+
+	<!-- Bootstrap Files -->
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+
+	<!-- Page CSS -->
+	<link rel="stylesheet" href="css/page.css">
+
+</head>
+<body>
+
+	<div class="d-flex">
+		<img src="images/carved-rock-logo-black.png" class="logo" alt="">
+	</div>
+
+	<div class="d-flex flex-row banner">
+	</div>
+
+<!--	examples-->
+
+<!--		<div class="d-flex flex-row-reverse">   // by default elements are on the left flex-row-reverse wil change directions put it on the right and reverse the elements -->
+<!--		<div class="d-flex flex-column-reverse">   // reverse column -->
+<!--		<div class="d-flex flex-row">   // Add the flex row to support other browsers  otherwise it's implied as a row-->
+<!--		<div class="d-flex flex-column">   // add as column-->
+<!--			<div class="testBox">test 1</div>-->
+<!--			<div class="testBox">test 2</div>-->
+<!--			<div class="testBox">test 3</div>-->
+<!--		</div>-->
+
+<!--	Combining Containers-->
+
+	<!--cards-->
+<!--Use built inBootstrap sizes
+
+-->
+	<div class="d-flex">  <!-- Stacked Horizontal -->
+		<div class="callOuts d-flex flex-column"> <!-- stacked vertically -->
+			<img src="images/mountain_Blue.png" class="d-block" alt=""> <!-- by default these are inline so you need to add the class d-block -->
+			<h3>Climbing</h3>
+			<p>Get your Climbing shoes ready</p>
+		</div>
+		<div class="callOuts d-flex flex-column">  <!-- stacked vertically -->
+			<img src="images/shoe_Blue.png" class="d-block" alt="">  <!-- by default these are inline so you need to add the class d-block -->
+			<h3>Running</h3>
+			<p>Run away from your troubles</p>
+		</div>
+		<div class="callOuts d-flex flex-column">  <!-- stacked vertically -->
+			<img src="images/bicycle_Blue.png" class="d-block" alt=""> <!-- by default these are inline so you need to add the class d-block -->
+			<h3>Bicycling</h3>
+			<p>Get a bike and go</p>
+		</div>
+	</div>
+
+
+	<div class="d-flex">
+		<div class="w-25">  <!-- w-25 this div will take up 25% width. 0, 25, 50, 75 100 are the only %'s you can use
+		with the width class.  For other sizes you need to add your own css You need to add on the "!important tag
+		see css pages.css
+		 -->
+			<img src="images/shutterstock_422560537.jpg" class="img-fluid" alt=""> <!-- class img-fluid will resize the image so it does not take up the entire box -->
+		</div>
+		<div class="w-75"> <!-- w-75 this div will take up 75% width -->
+			<h4>Title Section</h4>
+			<p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum</p>
+			<a href="#" class="btn btn-primary">Learn More</a>
+		</div>
+	</div>
+
+	<div class="d-flex bottomArea">
+		<div class="w-60">
+			<img src="images/carved-rock-logo-black.png" class="img-fluid h-25" alt="">
+			<h5>About Us</h5>
+			<p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dumm</p>
+		</div>
+		<div class="d-flex flex-column">
+			<h5>contact us</h5>
+			<div>123 W Jenkis St</div>
+			<div>555-555-555</div>
+			<div>infor@here.com</div>
+		</div>
+	</div>
+	<!-- Bootstrap Files -->
+	<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+	<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+
+	<!-- Page JS -->
+	<script src="js/page.js"></script>
+
+</body>
+</html>

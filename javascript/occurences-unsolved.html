@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Find All Occurences of a Value</title>
+  </head>
+  <body>
+    <script>
+
+      function characterCount (str, letter) {
+        var letterCount = 0;
+        for( var i = 0; i < str.length; i++ ) {        // You can treat strings like arrays when searching for characters.  str.length  is 8 for each character "apple.com"
+          if(str.charAt(i) === letter) {
+            letterCount++;
+          }
+          else {
+            console.log(i);
+          }
+        }
+        return letterCount;
+      }
+
+      console.log(characterCount('apple.com','p'));
+
+
+
+    </script>
+  </body>
+</html>

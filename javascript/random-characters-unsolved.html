@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Random Characters</title>
+  </head>
+  <body>
+    <script>
+      var characters = 'ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789';
+
+
+      function randomGen(x) {
+        var result ='';
+
+        for (var i = 0; i < x; i++){
+          result += characters[Math.floor(Math.random() * characters.length)];
+          console.log(result);
+
+          // Other ways to do the same thing
+          // var myrandom = Math.floor(Math.random() * characters.length + 1);  // "floor removes numbers on the right side of the decimal (removes float) (* character.length gives you the range of for the random function.
+          // var newchar = characters[myrandom];
+
+          // result += newchar;
+        }
+
+        return result;
+
+      }
+
+      console.log(randomGen(16));
+
+
+    </script>
+  </body>
+</html>
